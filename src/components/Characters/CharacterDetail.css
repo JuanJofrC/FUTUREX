@@ -1,0 +1,257 @@
+.character-detail {
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.character-detail:hover {
+    border-color: #3563e9;
+    box-shadow: 0 8px 20px rgba(128, 0, 255, 0.25);
+}
+
+.character-detail h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.character-detail-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.character-detail-image {
+    width: 300px;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.character-detail-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(128, 0, 255, 0.25);
+}
+
+.character-detail-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.character-detail-info p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.character-detail-info strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.character-sayings {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.character-sayings h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.quote {
+    font-style: italic;
+    color: #666;
+    padding: 0.5rem 0;
+}
+
+.back-button {
+    background-color: #3563e9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    transition: all 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: #2a50c4;
+    transform: translateX(-5px);
+}
+
+
+/* Estilos para modo dark */
+
+.dark-mode.character-detail {
+    background-color: #2a2a3a;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 2px solid #333;
+}
+
+.dark-mode.character-detail:hover {
+    border-color: #5d7ce4;
+    box-shadow: 0 8px 20px rgba(93, 124, 228, 0.35);
+}
+
+.dark-mode.character-detail h1 {
+    color: #f0f0f0;
+}
+
+.dark-mode .character-detail-image {
+    border-color: #444;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .character-detail-image:hover {
+    box-shadow: 0 8px 20px rgba(93, 124, 228, 0.35);
+}
+
+.dark-mode .character-detail-info p {
+    color: #ccc;
+}
+
+.dark-mode .character-detail-info strong {
+    color: #d8d8ff;
+}
+
+.dark-mode .character-sayings {
+    border-top-color: #444;
+}
+
+.dark-mode .character-sayings h3 {
+    color: #c8cdfd;
+}
+
+.dark-mode .quote {
+    color: #d1d4fc;
+}
+
+.dark-mode .back-button {
+    background-color: #81b3ff;
+}
+
+.dark-mode .back-button:hover {
+    background-color: #4d59ff;
+}
+
+
+/* Estilos para light */
+
+.l-mode.character-detail {
+    background-color: #dad4ff;
+    box-shadow: 0 4px 12px rgba(79, 68, 239, 0.1);
+    border: 2px solid #a6a5fc;
+}
+
+.l-mode.character-detail:hover {
+    border-color: #331cb9;
+    box-shadow: 0 8px 20px rgba(68, 79, 239, 0.3);
+}
+
+.l-mode.character-detail h1 {
+    color: #1d237f;
+}
+
+.l-mode .character-detail-image {
+    border-color: #aea5fc;
+    box-shadow: 0 4px 12px rgba(79, 68, 239, 0.1);
+}
+
+.l-mode .character-detail-image:hover {
+    box-shadow: 0 8px 20px rgba(94, 68, 239, 0.3);
+}
+
+.l-mode .character-detail-info p {
+    color: #2c1cb9;
+}
+
+.l-mode .character-detail-info strong {
+    color: #231d7f;
+}
+
+.l-mode .character-sayings {
+    border-top-color: #a6a5fc;
+}
+
+.l-mode .character-sayings h3 {
+    color: #231d7f;
+}
+
+.l-mode .quote {
+    color: #391cb9;
+}
+
+.l-mode .back-button {
+    background-color: #6f9bfa;
+}
+
+.l-mode .back-button:hover {
+    background-color: #5590ff;
+}
+
+
+/* Combinación de modo Dark y light */
+
+.dark-mode.l-mode.character-detail {
+    background-color: #7391e4;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 2px solid #444dca;
+}
+
+.dark-mode.l-mode.character-detail h1 {
+    color: #17037a;
+}
+
+.dark-mode.l-mode .character-detail-info p {
+    color: #2f27a1;
+}
+
+.dark-mode.l-mode .character-detail-info strong {
+    color: #3832a7;
+}
+
+.dark-mode.l-mode .character-sayings h3 {
+    color: #33358a;
+}
+
+.dark-mode.l-mode .quote {
+    color: #a6a5fc;
+}
+
+.dark-mode.l-mode .back-button {
+    background-color: #331cb9;
+}
+
+.dark-mode.l-mode .back-button:hover {
+    background-color: #5544ef;
+}
+
+
+/* Estilos responsivos */
+
+@media (max-width: 768px) {
+    .character-detail-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .character-detail-image {
+        width: 80%;
+        max-width: 300px;
+    }
+}
